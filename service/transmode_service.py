@@ -122,32 +122,27 @@ class TransmodeService:
         response = TransmodeResponse(Karakteristik_2_encoded=prediction_encoded)
         return response
 
-if __name__ == "__main__":
-    test_request = TransmodeRequest(
-        Fisik_1= 22,
-        Fisik_2_encoded= "Pria",
-        Fisik_3_encoded= "Ya",
-        Fisik_4_encoded= "Tidak",
-        Fisik_5_encoded= "Ya",
-        Mental_1_encoded= "Pelajar/Mahasiswa",
-        Mental_2_encoded= "Sarjana (S1)",
-        Finansial_1_encoded= "Rp2,000,000 - Rp4,999,999",
-        Finansial_2_encoded = "<Rp500,000",
-        Karakteristik_1_encoded = "Wisata",
-        # Karakteristik_2_encoded = "Bus AKAP Eksekutif",
-        durasi_perjalanan = 0.5,
-        tarif_transportasi = 450000,
-        fasilitas_operator= 4,
-        jadwal_keberangkatan_encoded = "Pagi hari",
-        jadwal_kedatangan = 0.3,
-        Frekuensi_encoded = "Kurang dari 1 kali per bulan",
-        Kelompok_encoded = "Sendiri"
-        # Skenario_1_encoded= "Beralih ke moda transportasi lain",
-        # Skenario_2_encoded= "Tetap menggunakan moda transportasi yang sama",
-        # Skenario_3_encoded= "Beralih ke moda transportasi lain",
-        # Skenario_4_encoded= "Beralih ke moda transportasi lain",
-        
-    )
-    transmode_service = TransmodeService()
-    res = transmode_service.predict(request = test_request)
-    print(res.Karakteristik_2_encoded)
+# if __name__ == "__main__":
+#     test_request = TransmodeRequest(
+#         Fisik_1= 22,
+#         Fisik_2_encoded= "Pria",
+#         Fisik_3_encoded= "Ya",
+#         Fisik_4_encoded= "Tidak",
+#         Fisik_5_encoded= "Ya",
+#         Mental_1_encoded= "Pelajar/Mahasiswa",
+#         Mental_2_encoded= "Sarjana (S1)",
+#         Finansial_1_encoded= "Rp2,000,000 - Rp4,999,999",
+#         Finansial_2_encoded = "<Rp500,000",
+#         Karakteristik_1_encoded = "Wisata",
+#         # Karakteristik_2_encoded = "Bus AKAP Eksekutif",
+#         durasi_perjalanan = 0.5,
+#         tarif_transportasi = 450000,
+#         fasilitas_operator= 4,
+#         jadwal_keberangkatan_encoded = "Pagi hari",
+#         jadwal_kedatangan = 0.3,
+#         Frekuensi_encoded = "Kurang dari 1 kali per bulan",
+#         Kelompok_encoded = "Sendiri"
+#     )
+#     transmode_service = TransmodeService()
+#     res = transmode_service.predict(request = test_request)
+#     print(res.Karakteristik_2_encoded)
