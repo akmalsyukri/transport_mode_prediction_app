@@ -5,13 +5,11 @@ class TransmodeRequest(BaseModel):
     Fisik_2_encoded: str
     Fisik_3_encoded: str
     Fisik_4_encoded: str
-    Fisik_5_encoded: str
     Mental_1_encoded: str
     Mental_2_encoded: str
     Finansial_1_encoded: str
     Finansial_2_encoded: str
     Karakteristik_1_encoded: str
-    # Karakteristik_2_encoded: str
     durasi_perjalanan: float
     tarif_transportasi: int
     fasilitas_operator: int
@@ -19,10 +17,6 @@ class TransmodeRequest(BaseModel):
     jadwal_kedatangan: float
     Frekuensi_encoded: str
     Kelompok_encoded: str
-    # Skenario_1_encoded: str
-    # Skenario_2_encoded: str
-    # Skenario_3_encoded: str
-    # Skenario_4_encoded: str
     
 
 class TransmodeResponse(BaseModel):
